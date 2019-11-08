@@ -20,20 +20,20 @@ const Header = () => (
             <Nav className="mrx-auto" navbar>
             
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">
-                  <img src={AVATAR} alt="avatar" className="img-fluid rounded-circle" style={{ width: 36 }} />
+                <NavLink className="font-weight-bold" href="/home">
+                  <img src='portrait.jpg' alt="protrait" className="img-fluid rounded-circle" style={{ width: 36 }} />
                 </NavLink>
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">Home</NavLink>
+                <NavLink className="font-weight-bold" href="/home">Home</NavLink>
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">Events</NavLink>
+                <NavLink className="font-weight-bold" href="/blog">Blogs</NavLink>
               </NavItem>
               
-              <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
+              {/* <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
                 <DropdownToggle className="font-weight-bold" nav caret>Learn</DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem className="font-weight-bold text-secondary text-uppercase" header disabled>Learn React</DropdownItem>
@@ -42,16 +42,16 @@ const Header = () => (
                   <DropdownItem>Tutorials</DropdownItem>
                   <DropdownItem>Courses</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               
             </Nav>
           </Col>
           
-          <Col className="d-flex justify-content-xs-start justify-content-lg-center">
+          {/* <Col className="d-flex justify-content-xs-start justify-content-lg-center">
             <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 80 }}>
               <img src={logo} alt="logo" className="position-relative img-fluid" />
             </NavbarBrand>
-          </Col>
+          </Col> */}
           
           <Col className="d-none d-lg-flex justify-content-end">
             <Form inline>
