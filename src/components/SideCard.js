@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import bg from '../bg.jpeg';
 
 import {
     Button, UncontrolledAlert, Card, CardImg, CardBody, 
@@ -15,7 +16,7 @@ const SideCard = () => (
       </UncontrolledAlert>
       
       <Card>
-        <CardImg top width="100%" src={BANNER} alt="banner" />
+        <CardImg top width="100%" src={bg} alt="banner" />
         <CardBody>
           <CardTitle className="h3 mb-2 pt-2 font-weight-bold text-secondary">Glad Chinda</CardTitle>
           <CardSubtitle className="text-secondary mb-3 font-weight-light text-uppercase" style={{ fontSize: '0.8rem' }}>Web Developer, Lagos</CardSubtitle>

@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../logo.svg';
+import portrait from '../portrait.jpg';
 
 import {
     Container, Row, Col, Form, Input, Button, Navbar, Nav,
@@ -21,16 +22,16 @@ const Header = () => (
             
               <NavItem className="d-flex align-items-center">
                 <NavLink className="font-weight-bold" href="/home">
-                  <img src='portrait.jpg' alt="protrait" className="img-fluid rounded-circle" style={{ width: 36 }} />
+                  <img src={portrait} alt="portrait" className="img-fluid rounded-circle" style={{ width: 36 }} />
                 </NavLink>
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/home">Home</NavLink>
+                <NavLink className="font-weight-bold" href="/home/index">Home</NavLink>
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/blog">Blogs</NavLink>
+                <NavLink className="font-weight-bold" href="/home/blog">Blogs</NavLink>
               </NavItem>
               
               {/* <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
@@ -55,7 +56,7 @@ const Header = () => (
           
           <Col className="d-none d-lg-flex justify-content-end">
             <Form inline>
-              <Input type="search" className="mr-3" placeholder="Search React Courses" />
+              <Input type="search" className="mr-3" placeholder="Search" />
               <Button type="submit" color="info" outline>Search</Button>
             </Form>
           </Col>
